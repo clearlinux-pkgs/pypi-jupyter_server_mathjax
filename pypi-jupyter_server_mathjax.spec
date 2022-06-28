@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_server_mathjax
 Version  : 0.2.5
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/d4/61/a1997eb9c17b7b6ab39310d524361c1191a0fc960ab56523398786a57a36/jupyter_server_mathjax-0.2.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d4/61/a1997eb9c17b7b6ab39310d524361c1191a0fc960ab56523398786a57a36/jupyter_server_mathjax-0.2.5.tar.gz
 Summary  : MathJax resources as a Jupyter Server Extension.
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656385783
+export SOURCE_DATE_EPOCH=1656396534
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
