@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyter_server_mathjax
 Version  : 0.2.6
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/9c/40/9a1b8c2a2e44e8e2392174cd8e52e0c976335f004301f61b66addea3243e/jupyter_server_mathjax-0.2.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9c/40/9a1b8c2a2e44e8e2392174cd8e52e0c976335f004301f61b66addea3243e/jupyter_server_mathjax-0.2.6.tar.gz
 Summary  : MathJax resources as a Jupyter Server Extension.
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1657894683
+export SOURCE_DATE_EPOCH=1666713715
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -88,8 +88,8 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-jupyter_server_mathjax
-cp %{_builddir}/jupyter_server_mathjax-0.2.6/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyter_server_mathjax/4a3ccb8c03802d2981db7856c534491a854e6741
-cp %{_builddir}/jupyter_server_mathjax-0.2.6/jupyter_server_mathjax/static/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyter_server_mathjax/2b8b815229aa8a61e483fb4ba0588b8b6c491890
+cp %{_builddir}/jupyter_server_mathjax-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyter_server_mathjax/4a3ccb8c03802d2981db7856c534491a854e6741 || :
+cp %{_builddir}/jupyter_server_mathjax-%{version}/jupyter_server_mathjax/static/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyter_server_mathjax/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
